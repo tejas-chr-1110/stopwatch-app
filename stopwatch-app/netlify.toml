@@ -1,5 +1,3 @@
 [build]
-  functions = "netlify/functions"
-
-[build]
-  publish = "build"  # The directory where your React app's static files are located
+  publish = "build"        # The directory where your React app's static files are located
+  functions = "netlify/functions"  # Directory for Netlify functions
