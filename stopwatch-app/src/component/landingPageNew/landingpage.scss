@@ -1,0 +1,217 @@
+.landingPage {
+  background-color: transparent;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  overflow: scroll;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  .landingPageTitle {
+    position: relative;
+    height: 96px;
+    width: 100%;
+    font-family: monospace;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .blue_ring {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 2px #1900ff);
+    animation: glow 1.5s infinite alternate, rotate 2s linear infinite;
+    display: inline-block;
+  }
+  .blue_ring1 {
+    position: relative;
+    width: 60%;
+    height: 100%; /* Reduce the height */
+    border: 2px solid white;
+    border-radius: 100%; /* Ensures the corners are rounded for an oval */
+    filter: drop-shadow(0 0 2px #1900ff);
+    animation: glow 1.5s infinite alternate, rotate 2s linear infinite;
+    display: inline-block;
+  }
+  .blue_ring2 {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    border: 25px solid #0115a7;
+    background: transparent;
+    box-shadow: 0 0 20px 10px rgb(15 15 255);
+    border-radius: 100%;
+    filter: blur(15px);
+    animation: glow 1.5s infinite alternate, rotate 2s linear infinite;
+    display: inline-block;
+  }
+  .position_0 {
+    position: absolute;
+    left: 1px;
+    border-radius: 80% !important;
+  }
+  .position_1 {
+    position: absolute;
+    left: 22px;
+  }
+  .position_2 {
+    position: absolute;
+    left: 43px;
+  }
+  .position_3 {
+    position: absolute;
+    left: -20px;
+  }
+  .position_4 {
+    position: absolute;
+    left: -35px;
+  }
+  .position_5 {
+    position: absolute;
+    left: -46px;
+  }
+  .position_6 {
+    position: absolute;
+    top: 1px;
+  }
+  .position_7 {
+    position: absolute;
+    top: 25px;
+  }
+  .ring_wrapper {
+    position: absolute;
+    top: 10.33vh;
+    width: 80vw;
+    height: 80vh;
+    left: 10vw;
+    display: flex;
+    z-index: 0;
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 2px #1900ff, 0 0 4px #1900ff;
+  }
+  to {
+    box-shadow: 0 0 8px #1900ff, 0 0 10px #1900ff;
+  }
+}
+
+// @keyframes rotate {
+//   from {
+//     transform: rotate(360deg);
+//   }
+//   to {
+//     transform: rotate(0deg);
+//   }
+// }
+.header_components {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  color: white;
+  display: flex;
+  width: 75vw;
+  height: 5vh;
+  border-radius: 20px;
+  background: transparent;
+  // background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+  backdrop-filter: blur(40px); /* Background blur effect */
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+  border: 0 px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
+  z-index: 1;
+}
+.grid {
+  z-index: 101;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0%;
+}
+.letf_wrapper {
+  width: 50%;
+  position: relative;
+  left: 0px;
+  overflow: hidden;
+  display: flex;
+  height: inherit;
+}
+.right_wrapper {
+  width: 50%;
+  position: relative;
+  right: 0px;
+  overflow: hidden;
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.main_wrapper {
+  z-index: 3;
+  position: relative;
+  display: flex;
+  height: calc(100vh - 152px);
+  width: 100vw;
+  overflow: hidden;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.test {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.hero-circle {
+  z-index: -1;
+  aspect-ratio: 1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  object-fit: cover;
+  background-color: #0000;
+  width: 100vw;
+  max-width: 1600px;
+  height: 100vw;
+  max-height: 1600px;
+  position: absolute;
+  transform: translate(-45vw);
+}
+.video-fill {
+  mix-blend-mode: multiply; /* or screen, overlay, etc. */
+}
+.hidden {
+  display: none;
+}
+
+.video-canvas {
+  width: 100%;
+  height: auto;
+}
+.about_us {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  // mix-blend-mode: ; /* Blends with the blue image */
+  // z-index: 3;
+}

@@ -1,0 +1,48 @@
+.hero-circle {
+  transform: translate3d(-45%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.hero-container {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+.landing_page {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+.header_components {
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  color: white;
+  display: flex;
+  width: 75vw;
+  height: 5vh;
+  border-radius: 20px;
+  background: transparent;
+  // background: rgba(255, 255, 255, 0.1); /* Semi-transparent overlay */
+  backdrop-filter: blur(40px); /* Background blur effect */
+  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+  border: 0 px solid rgba(255, 255, 255, 0.2); /* Subtle border for contrast */
+  z-index: 1;
+}
+.section.is-dark {
+  background-color: #000000;
+  color: #fff;
+  background-image: linear-gradient(#0a0a0aaf, #0a0a0acc),
+    url("../assets/white_dots.png");
+  //   background-image: linear-gradient(#0a0a0acc, #0a0a0acc),
+  //     url("../assets/white_dots.png");
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, repeat;
+  background-size: auto, 1550px;
+  background-attachment: scroll, scroll;
+}

@@ -1,0 +1,26 @@
+.grid {
+  z-index: 101;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0%;
+}
+.grid-container {
+  justify-content: space-between;
+  width: 1628px;
+  height: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
+  display: flex;
+}
+.grid-line {
+  border-right: 1px solid #ffffff1a;
+  height: 100%;
+}
+@media screen and (max-width: 479px) {
+  .grid-line.not-mobile {
+    display: none;
+  }
+}

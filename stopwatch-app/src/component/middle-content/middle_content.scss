@@ -1,0 +1,147 @@
+$image_path: "../assets/white_dots.png";
+
+.middle_wrapper {
+  background: transparent;
+  width: 100%;
+  .section_1 {
+    background: transparent;
+
+    height: 400px;
+    width: 100%;
+    // background-color: antiquewhite;
+  }
+  .section_2 {
+    background: white;
+
+    height: 800px;
+    width: 100%;
+  }
+  .section_3 {
+    background: transparent;
+
+    height: 400px;
+    width: 100%;
+    // background-color: antiquewhite;
+  }
+  .section_4 {
+    background: transparent;
+
+    height: 400px;
+    width: 100%;
+    // color: aliceblue;
+  }
+}
+.section.is-dark {
+  background-color: #000000;
+  color: #fff;
+  background-image: linear-gradient(#0a0a0aaf, #0a0a0acc),
+    url("../assets/white_dots.png");
+  //   background-image: linear-gradient(#0a0a0acc, #0a0a0acc),
+  //     url("../assets/white_dots.png");
+  background-position: 0 0, 50% 0;
+  background-repeat: repeat, repeat;
+  background-size: auto, 1550px;
+  background-attachment: scroll, scroll;
+}
+.gallery-title {
+  will-change: filter, width, height;
+  filter: hue-rotate(3.9064deg);
+  width: auto;
+  margin: 0;
+
+  /* Gradient Text Effect */
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(109, 230, 113, 0.4);
+  white-space: nowrap;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #6de6d7,
+    #6de671 20%,
+    rgba(109, 230, 113, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Typography */
+  font-size: clamp(60px, 10vw, 120px); /* Responsive font size */
+  line-height: 1.1;
+  text-align: center;
+
+  /* Smooth Transition */
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Optional: Hover Effect */
+.gallery-title:hover {
+  filter: hue-rotate(15deg);
+}
+
+.button_with_animation {
+  display: flex;
+  border: 1px solid white;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.button_with_animation:hover {
+  background: #6de671;
+}
+////////////////////////////////////////////
+
+.liquid-morph-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #001;
+}
+
+.liquid-morph-element {
+  width: 250px;
+  height: 100px;
+  background: #0a2342;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.liquid-morph-element span {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.liquid-morph-element::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(#0ff 0deg, #0a2342 120deg, #0ff 240deg);
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.liquid-morph-element:hover {
+  border-radius: 10px;
+  transform: rotate(15deg);
+}
+
+.liquid-morph-element:hover::before {
+  opacity: 0.5;
+  transform: scale(2);
+}

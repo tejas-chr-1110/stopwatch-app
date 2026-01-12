@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  // background-color: #007bff;
+  color: white;
+  border-bottom: 1px solid grey;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.headerbutton {
+  border-radius: 100px;
+  background-color: #3e2fff;
+  justify-content: center;
+  align-items: center;
+  height: 33px;
+  width: 100px;
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+}
+.right_warpper {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+.headerButtonComponent {
+  margin: 10px;
+}
